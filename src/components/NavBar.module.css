@@ -27,8 +27,8 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .logo {
-    width: 120px;
-    height: 90px;
+    width: 80px;
+    height: 60px;
     padding: 10px;
     border-radius: 30px;
 }
@@ -45,10 +45,14 @@ font-family: 'Roboto Mono', monospace;
 
 .logoAndTitle h1{
     font-family: 'Playfair Display', serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 .logoAndTitle p{
     font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -75,16 +79,39 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .input {
+    height: 40px;
+	width: 250px;
     border: none;
-    padding: 1rem;
-    border-radius: 1rem;
-    background: #e8e8e8;
-    box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
-    transition: 0.3s;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: #fbe1b7ff;
+    border: 1px solid #FBE1B7;
+  	box-shadow: 6px 6px 12px #b4a48c,-6px -6px 12px #fee2b6;
+	font-family: 'Roboto Mono', monospace; 
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 350px;
+}
+.input::placeholder {
+	color: rgb(160, 160, 160);
 }
 .input:focus {
     outline-color: #e8e8e8;
     background: #e8e8e8;
     box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
     transition: 0.3s;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+.list a{
+    font-family: 'Roboto Mono', monospace; 
+    color: #e3655bff;
+    text-decoration: none;
 }
