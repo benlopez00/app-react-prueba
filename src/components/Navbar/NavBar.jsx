@@ -21,7 +21,7 @@ export default function NavBar() {
 					</div>
 					<div className={styles.cartYBusc}>
 						<CartWidget/>
-                        <input type="text" name="text" class="input" placeholder="Type here..." className={styles.input}/>
+                        <input type="text" name="text" placeholder="Type here..." className={styles.input}/>
 					</div>
 			</div>
 		</Fragment>

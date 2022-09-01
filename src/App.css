@@ -1,6 +1,9 @@
 .App{
     display: grid;
-	grid-template-areas: "nav";
+	grid-template-areas: 
+	"nav"
+	"container";
+	grid-template-rows: 10vh 90vh;
 	height: 100vh;
 	width: 100vw;
 }
