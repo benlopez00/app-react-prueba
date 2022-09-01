@@ -115,3 +115,10 @@ font-family: 'Roboto Mono', monospace;
     color: #e3655bff;
     text-decoration: none;
 }
+
+.cartYBusc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
