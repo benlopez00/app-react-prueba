@@ -11,7 +11,7 @@ font-family: 'Roboto Mono', monospace;
 --fire-opal: #e3655bff
 */
 /* From uiverse.io by @ShadowShahriar */
-button {
+.boton {
     --border-radius: 15px;
     --border-width: 4px;
     appearance: none;
@@ -25,11 +25,11 @@ button {
     color: #fff;
     z-index: 2;
 }
-button img{
+.boton img{
     max-width: 40px;
 }
 
-button::after {
+.boton::after {
     --m-i: linear-gradient(#000, #000);
     --m-o: content-box, padding-box;
     content: "";
@@ -61,7 +61,7 @@ button::after {
     animation-play-state: paused;
 }
 
-button:hover::after {
+.boton:hover::after {
     animation-play-state: running;
 }
 
@@ -71,11 +71,11 @@ button:hover::after {
     }
 }
 
-button,
-button::after {
+.boton,
+.boton::after {
     box-sizing: border-box;
 }
 
-button:active {
+.boton:active {
     --border-width: 5px;
 }
