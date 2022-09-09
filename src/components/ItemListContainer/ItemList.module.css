@@ -1,0 +1,7 @@
+.lista{
+    grid-area: list;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+}

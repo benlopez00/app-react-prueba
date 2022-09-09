@@ -12,9 +12,9 @@ const ItemCount = ({stock}) => {
         : alert("No se aceptan valores negativos")
 
     return (
-        <div className={styles.card}>
+        <>
             <img className={styles.bolsa} src={require("../../assets/bolsaComida.png")} alt="Bolsa de Comida para perro marca Pedigree" />
-            <h3>Stock disponible: {stock}</h3>
+            <h3 className={styles.infoStock}>Stock disponible: {stock}</h3>
             <div className={styles.botonera}>
                 <button className={styles.botonCount} onClick={restar}>
                     -
@@ -24,7 +24,7 @@ const ItemCount = ({stock}) => {
                     +
                 </button>
             </div>
-        </div>
+        </>
     )
 }
 
