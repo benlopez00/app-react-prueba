@@ -9,6 +9,7 @@ const ItemList = () => {
     const [meta, setMeta] = useState([])
 
     useEffect(() => {
+        //Eslint no me permite poner la promesa por afuera del useEffect
         const recibirData = new Promise ((resolve, reject)=>{
             setTimeout(()=>{
                 resolve(data);
@@ -26,8 +27,8 @@ const ItemList = () => {
     return (
         <div className={styles.lista}>
             {meta.map(x => 
-                <Card>
-                    <ItemCount key={x.id} stock={x.stock}/>
+                <Card key={x.id}>
+                    <ItemCount  stock={x.stock} imgx={x.path} peso={x.peso} para={x.para}/>
                 </Card>
             )}
         </div>
