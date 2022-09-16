@@ -1,7 +1,7 @@
 import styles from "./ItemCount.module.css"
 import { useState } from "react"
 
-const ItemCount = ({stock, imgx, peso, para}) => {
+const ItemCount = ({stock, imgx, precio, ratio}) => {
     const [num, setNum] = useState(0)
 
     const sumar = () => num < stock ? 
@@ -14,7 +14,7 @@ const ItemCount = ({stock, imgx, peso, para}) => {
     return (
         <>
             <img className={styles.bolsa} src={imgx} alt="Bolsa de Comida para perro marca Pedigree" />
-            <h3 className={styles.infoStock}>Stock: {stock}  |  Peso: {peso}kg  |  {para}</h3>
+            <h3 className={styles.infoStock}>Stock: {stock}  |  ${precio}  |  {ratio}</h3>
             <div className={styles.botonera}>
                 <button className={styles.botonCount} onClick={restar}>
                     -

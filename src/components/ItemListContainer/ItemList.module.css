@@ -1,6 +1,7 @@
 .lista{
-    grid-area: list;
+    height: 88vh;
     display: flex;
+    margin-top: 12vh;
     flex-direction: row;
     width: 100vw;
     flex-wrap: wrap;
