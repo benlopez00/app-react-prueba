@@ -10,6 +10,7 @@ function App() {
 				<NavBar/>
 				<Routes>
 					<Route exact path='/' element={<ItemList/>}/>
+					<Route path="/productos/:tipoProducto" element={<ItemList/>}/>
 				</Routes>
 				
 			</div>

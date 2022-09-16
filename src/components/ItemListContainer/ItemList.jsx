@@ -1,22 +1,31 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import Card from '../Card/Card'
 import ItemCount from '../ItemCount/ItemCount'
 import styles from './ItemList.module.css'
 
 const ItemList = () => {
     const [meta, setMeta] = useState([])
+    const {tipoProducto} = useParams();
 
-    useEffect(() => {
-        getApi();
-    }, [])
+
     
-    const getApi= async () => {
-        fetch('https://fakestoreapi.com/products?limit=15')
+    useEffect(() => {
+        fetch('https://fakestoreapi.com/products?limit=20')
             .then(res=>res.json())
-            .then(json=>{setMeta(json)})
             .catch((error)=>console.log(error))
-    }
+            .then(json =>{
+                if (!tipoProducto){
+                    setMeta(json)
+                }else{
+                    const filtrado = json.filter(item => item.category === tipoProducto);
+                    setMeta(filtrado)
+                }
+            });
+    }, [tipoProducto])
+    
+    
 
     
     return (

@@ -108,10 +108,11 @@ font-family: 'Roboto Mono', monospace;
     align-content: center;
     gap: 50px;
 }
-.list a{
+.list h2{
     font-family: 'Roboto Mono', monospace; 
     color: #e3655bff;
     text-decoration: none;
+    font-size: small;
 }
 
 .cartYBusc{
