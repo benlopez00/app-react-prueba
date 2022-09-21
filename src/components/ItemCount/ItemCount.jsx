@@ -1,7 +1,7 @@
 import styles from "./ItemCount.module.css"
 import { useState } from "react"
 
-const ItemCount = ({stock, imgx, precio, ratio}) => {
+const ItemCount = ({stock, imgx, precio, ratio, onAdd}) => {
     const [num, setNum] = useState(0)
 
     const sumar = () => num < stock ? 
@@ -23,6 +23,7 @@ const ItemCount = ({stock, imgx, precio, ratio}) => {
                 <button className={styles.botonCount} onClick={sumar}>
                     +
                 </button>
+                <button disabled={stock === 0} className='botonAgregar' onClick={()=>onAdd(num)}>Agregar al carrito</button>
             </div>
         </>
     )
