@@ -9,10 +9,9 @@ export default function NavBar() {
 			<div className={styles.nav}>
 					<Link to={'/'} style={{ textDecoration: 'none' }}>
 						<div className={styles.logoAndTitle}>
-							<img src={require ("../../assets/logoDoggo.jpg")} alt="a happy dog icon" className={styles.logo}/>
+							<img src={require ("../../assets/logoCommerce.jpg")} alt="a supermarket cart" className={styles.logo}/>
 							<div>
-								<h1>Doggopedia</h1>
-								<p>the most woofing page!</p>
+								<h1>SIBERIA</h1>
 							</div>
 						</div>
 					</Link>

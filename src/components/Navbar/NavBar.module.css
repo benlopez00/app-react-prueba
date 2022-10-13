@@ -13,19 +13,22 @@ font-family: 'Roboto Mono', monospace;
 
 .nav {
     color: #fff;
-    background-color: #fbe1b7ff;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: 3px 5%;
+    border: 2px solid black;
+    border-radius: 10px;
     height: 12vh;
     z-index: 1;
     position: fixed;
 }
 
 .logo {
-    width: 80px;
+    width: 60px;
     height: 60px;
     padding: 10px;
     border-radius: 30px;
@@ -37,17 +40,11 @@ font-family: 'Roboto Mono', monospace;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 15px;
     color: black;
 }
 
 .logoAndTitle h1{
-    font-family: 'Playfair Display', serif;
-    padding: 0px;
-    margin: 0px;
-}
-
-.logoAndTitle p{
     font-family: 'Open Sans', sans-serif;
     padding: 0px;
     margin: 0px;
@@ -82,9 +79,9 @@ font-family: 'Roboto Mono', monospace;
     border: none;
     border-radius: 15px;
     padding: 5px 15px;
-    background-color: #fbe1b7ff;
-    border: 1px solid #FBE1B7;
-  	box-shadow: 6px 6px 12px #b4a48c,-6px -6px 12px #fee2b6;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid #e1e1e1;
+  	box-shadow: 6px 6px 12px #aeaeae,-6px -6px 12px #fff9f0;
 	font-family: 'Roboto Mono', monospace; 
     font-size: 15px;
     font-weight: 400;

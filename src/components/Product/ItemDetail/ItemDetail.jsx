@@ -1,4 +1,4 @@
-import ItemCount from '../ItemCount/ItemCount'
+import ItemCount from '../Count/Count'
 import styles from './ItemDetail.module.css'
 
 export const ItemDetail = ({item})=>{

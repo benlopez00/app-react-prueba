@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Card from '../Card/Card'
-import ItemCount from '../ItemCount/ItemCount'
+import ItemCount from '../Count/Count'
 import styles from './ItemList.module.css'
 
 const ItemList = () => {
