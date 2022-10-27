@@ -32,7 +32,7 @@ const ItemList = () => {
         <div className={styles.lista}>
             {meta.map(x => 
                 <Card key={x.id}>
-                    <ItemCount  stock={x.rating.count} imgx={x.image} precio={x.price} ratio={x.rating.rate}/>
+                    <ItemCount  stock={x.rating.count} imgx={x.image} precio={x.price} ratio={x.rating.rate} id={x.id}/>
                 </Card>
             )}
         </div>
